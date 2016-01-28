@@ -12,18 +12,13 @@
     flex-direction: row;
     border: 10px solid deeppink;
     height: 100vh;
-    align-items: center;
 }
 
 .box {
-    width: 300px;
+    flex: 1;
 }
 
-.box1 {
-    align-self: stretch;
-}
 
-.box3 {
-    align-self: flex-end;
+.box4 {
+    flex: 3;
 }
-
