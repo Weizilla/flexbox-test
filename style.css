@@ -2,12 +2,15 @@
     display: flex;
     border: 10px solid deeppink;
     flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
 }
 
 .box {
     font-size: 100px;
     text-align: center;
-    padding: 10px;
+    margin: 10px;
+    width: calc(33.333% - 20px);
 }
 
 .box1 {
