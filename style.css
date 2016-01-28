@@ -1,4 +1,5 @@
 .container {
+    display: flex;
     border: 10px solid deeppink;
 }
 
