@@ -1,5 +1,12 @@
+header, section, nav, footer {
+    border: 2px solid black;
+}
+
+img {
+    width: 100%;
+}
+
 .flex-nav ul {
-    border: 10px solid black;
     list-style-type: none;
     display: flex;
 }
@@ -10,6 +17,10 @@
 
 .flex-nav .icon {
     flex: 1;
+}
+
+.menu {
+    display: none;
 }
 
 @media all and (max-width: 1000px) {
@@ -30,5 +41,44 @@
 @media all and (max-width: 500px) {
     .flex-nav li {
         flex-basis: 100%;
+    }
+
+    /* flex containers */
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* flex items */
+    .wrapper > * {
+        order: 99;
+    }
+
+    .flex-nav {
+        order: 0;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .flex-nav ul {
+        display: none;
+    }
+
+    .flex-nav ul.open {
+        display: flex;
+    }
+
+    .top {
+        order: 2;
+    }
+
+    .details {
+        order: 3;
+    }
+
+    .sign-up {
+        order: 4;
     }
 }

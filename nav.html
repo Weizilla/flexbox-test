@@ -5,23 +5,54 @@
     <title>Nav Test</title>
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menu').click(function() {
+                $('.flex-nav ul').toggleClass("open");
+            });
+        });
+    </script>
 </head>
 <body>
 
-<nav class="flex-nav">
-    <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-        <li>Item 5</li>
-        <li>Item 6</li>
-        <li class="icon"><i class="fa fa-shopping-basket"></i></li>
-        <li class="icon"><i class="fa fa-usb"></i></li>
-        <li class="icon"><i class="fa fa-cloud-upload"></i></li>
-    </ul>
-</nav>
+<div class="wrapper">
+    <header class="top">
+        What the Flexbox?
+    </header>
 
+    <nav class="flex-nav">
+        <a href="#" class="menu">Menu <i class="fa fa-bars"></i></a>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li class="icon"><i class="fa fa-shopping-basket"></i></li>
+            <li class="icon"><i class="fa fa-usb"></i></li>
+            <li class="icon"><i class="fa fa-cloud-upload"></i></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <img src="airplane.jpg">
+    </section>
+
+    <section class="details">
+        Lots of details here
+    </section>
+
+    <section class="sign-up">
+        Some sign up here
+    </section>
+
+    <footer>
+        Wei
+    </footer>
+
+</div>
 
 </body>
 </html>
