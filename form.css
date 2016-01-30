@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+.cover {
+    background-color: lightgreen;
+    height: 100vh;
+    width: 100%;
+}
+
+label {
+    background-color: white;
+}
+
+.flex-form {
+    width: 75%;
+    border: 1px solid black;
+}
+
+.flex-form > * {
+    padding: 10px;
+    -webkit-appearance: none;
+}
+
+.cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-form {
+    display: flex;
+    border: 20px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+input[type="search"] {
+    flex: 1 1 500px;
+}
